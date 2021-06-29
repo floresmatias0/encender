@@ -3,264 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Matias Flores" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>newsletter</title>
     <style type="text/css">
-      body{
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      header{
-        width: 100%;
-        background-image: url("/assets/limones.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 200px;
-      }
-      .logoHeader{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 211px;
-        background-color: white;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .logoHeader img{
-        width: 100%;
-      }
-      .container{
-        width: 100%;
-      }
-      /* Bloque uno */
-      .bloque1{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        box-sizing: content-box;
-      }
-      .bloque1 h1{
-        font-size: 26px;
-        letter-spacing: 2px;
-        line-height: 30px;
-        color: #82bd47;
-        font-weight: bold;
-        margin: 0;
-        font-family: "Arial";
-        text-align: center;
-      }
-      .bloque1 p{
-        font-size: 16px;
-        line-height: 25px;
-        margin: 1.5em !important;
-        color: #000000;
-        font-family: "Arial";
-        text-align: center;
-        margin: 0;
-      }
-      .bloque1 img{
-          width:51px;
-          height: 74px;
-      }
 
-      /* Bloque dos */
-      .bloque2{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-      .contentBloque2{
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-        background-color: #efeeee;
-      }
-      .imagebloque2,.textbloque2{
-        width: 50%;
-      }
-      .textbloque2{
-        margin: 1em;
-      }
-      .imagebloque2{
-        background-image: url("/assets/lapicera.png");
-        background-size: cover;
-        background-position: center;
-      }
-      .textbloque2 h1{
-        font-size: 20px;
-        line-height: 23px;
-        color: #000000;
-        font-weight: bold;
-        font-family: "Arial";
-      }
-      .textbloque2 p{
-        font-size: 13px;
-        line-height: 19px;
-        color: #000000;
-        font-family: "Arial";
-      }
-
-      /* Bloque tres */
-      .bloque3{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-      }
-      .contentBloque3{
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-        margin: 1em;
-        background-color: #82bd47;
-        box-sizing: border-box;
-      }
-
-      .tituloBloque3 h1{
-        font-size: 25px;
-        line-height: 29px;
-        color: #fffefe;
-        font-weight: bold;
-        font-family: "Arial";
-        text-align: justify;
-        padding-left: 1em;
-        padding-right: 1em;
-      }
-      .textoBloque3{
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-      .linea3{
-        width: 100%;
-        border-left: 2px solid white;
-      }
-      .textoBloque3 p{
-        font-size: 13px;
-        line-height: 19px;
-        color: #fffefe;
-        margin: 0;
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: 1em;
-        font-family: "Arial";
-      }
-      .sanMiguelButton{
-        width: 133px;
-        margin: 1em;
-        height: 35px;
-        background-color: #ffffff;
-        border: none;
-        cursor: pointer;
-      }
-      .sanMiguelButton:hover{
-        border: 2px solid lightblue;
-      }
-      .sanMiguelButton a{
-        text-decoration: none;
-        font-weight: 800;
-        color: #000000;
-        font-size: 16px;
-        line-height: 23px;
-        font-family: "Arial";
-        text-align: center;
-      }
-      .logofooter{
-        width: 20%;
-      }
-      .logofooter img{
-        width: 100%;
-      }
-      .redes{
-        width: 80%;
-      }
-      /* Bloque 4*/
-      .bloque4{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 2em;
-      }
-      .contentBloque4{
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-      }
-      .card{
-        width: 32%;
-        background-color: #efeeee;
-      }
-      .card p{
-        font-size: 10px;
-        line-height: 12px;
-        color: #000000;
-        font-family: "Arial";
-      }
-      .card h2{
-        font-size: 16px;
-        line-height: 15px;
-        color: #000000;
-        font-weight: bold;
-        font-family: "Arial";
-      }
-      .image1 img, .image2 img, .image3 img{
-        width: 100%;
-        height: 119px;
-      }
-      .textoBloque4{
-        margin: 1em;
-      }
-
-      /* FOOTER */
-      footer{
-        width: 100%;
-        border-top: 2px solid gray;
-        display: flex;
-        flex-direction: row;
-      }
-      .logofooter{
-        width: 30%;
-      }
-      .redes{
-        width: 70%;
-      }
-      .logofooter img{
-          width: 100%;
-          margin-top: 0.5em;
-      }
-      .redes ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        float: right;
-      }
-      .redes ul li{
-        margin-left: 0.2em;
-        margin-right: 0.3em;
-        margin-top: 1em;
-      }
-      .redes ul li img{
-        width: 100%;
-        cursor: pointer;
-      }
       @media screen and (max-width:600px){
-        body{
-          width: 100%;
+        body,header,.container,footer,.contentFoot, .contentHead{
+          width: 100% !important;
         }
         .contentBloque2{
           width: 90%;
@@ -284,11 +34,6 @@
           background-color: #82bd47;
           box-sizing: border-box;
         }
-        .linea3{
-          width: 100%;
-          border-top: 2px solid white;
-          border-left: none;
-        }
         .image1 img, .image2 img, .image3 img{
           height: 200px;
         }
@@ -300,16 +45,8 @@
           line-height: 0;
           text-align: center;
         }
-        .sanMiguelButton{
-          margin: 0;
-          margin-left: 50%;
-          transform: translateX(-50%);
-        }
-        footer{
-          flex-direction: column;
-        }
-        .logofooter{
-          width: 100%;
+        .contentFoot{
+          flex-direction: column !important;
         }
         .redes{
           width: 100%;
@@ -325,86 +62,75 @@
       }
     </style>
   </head>
-  <body>
-    <header>
-      <div class="capa03">
-        <div class="logoHeader">
-          <img src="/assets/sanmiguel.png" alt="logo">
-        <div>
-      </div>
-    </header>
-    <div class="container">
-      <div class="bloque1">
-        <h1>TÍTULO UNO</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-        <img src="/assets/Forma.png" alt="user">
-      </div>
-      <div class="bloque2">
-        <div class="contentBloque2">
-          <div class="imagebloque2">
-          </div>
-          <div class="textbloque2">
-            <h1>TÍTULO DOS</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-          </div>
-        </div>
-      </div>
-      <div class="bloque3">
-        <div class="contentBloque3">
-          <div class="tituloBloque3">
-            <h1>TEXTO TÍTULO TRES</h1>
-          </div>
-          <div class="textoBloque3">
-            <div class="linea3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              <button class="sanMiguelButton"><a href="https://sanmiguelglobal.com/somos-lideres-en-la-industria-alimenticia">BOTÓN</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bloque4">
-        <div class="contentBloque4">
-            <div class="card">
-              <div class="image1">
-                <img src="/assets/image1.png" alt="image1"/>
-              </div>
-              <div class="textoBloque4">
-                <h2>TÍTULO DOS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="image2">
-                <img src="/assets/image2.png" alt="image2"/>
-              </div>
-              <div class="textoBloque4">
-                <h2>TÍTULO TRES</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="image3">
-                <img src="/assets/image3.png" alt="image3"/>
-              </div>
-              <div class="textoBloque4">
-                <h2>TÍTULO CUATRO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <body">
+    <header style="width: 600px; margin-left: auto; margin-right: auto;">
+    <div class="contentHead" style="width: 600px; margin-left: auto; margin-right: auto; background-image: url('https://res.cloudinary.com/djnhaprmj/image/upload/v1624946860/ASSETS/limones_o1vtdg.png'); background-size: cover; background-position: center; height: 200px;">
+    <div class="logoHeader" style="display: flex; justify-content: center; align-content: center; width: 211px; background-color: white; margin-left: auto; margin-right: auto;"><img style="width: 100%;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/sanmiguel_y3oe53.png" alt="logo" /></div>
     </div>
-    <footer>
-        <div class="logofooter">
-          <img src="/assets/sanmiguel.png" alt="logo">
-        </div>
-        <div class="redes">
-          <ul>
-            <li><a href="https://www.facebook.com/sanmiguelglobal"><img src="/assets/ig.png" alt="instagram"></a></li>
-            <li><a href="https://www.instagram.com/sanmiguelglobal/"><img src="/assets/fb.png" alt="facebook"></a></li>
-            <li><a href="https://twitter.com/SanMiguelGlobal"><img src="/assets/tw.png" alt="twitter"></a></li>
-          </ul>
-        </div>
+    </header>
+    <div class="container" style="width: 600px; margin-left: auto; margin-right: auto;">
+    <div class="bloque1" style="width: 100%; margin-top: 30px; margin-bottom: 30px; text-align: center;">
+    <h1 style="font-size: 26px; letter-spacing: 2px; line-height: 30px; color: #82bd47; font-family: 'Arial'; font-weight: bold;">TÍTULO UNO</h1>
+    <p style="font-size: 16px; line-height: 25px; margin: 0; color: #000000; font-family: 'Arial';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+    <img style="width: 51px; height: 74px; margin: 10px;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/Forma_fifmn6.png" alt="user" /></div>
+    <div class="bloque2" style="width: 100%; display: flex; justify-content: center; align-content: center; margin-top: 1em; margin-bottom: 1em;">
+    <div class="contentBloque2" style="width: 100%; display: flex; flex-direction: row; background-color: #efeeee;">
+    <div class="imagebloque2" style="width: 50%; background-image: url('https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/lapicera_tpw6l8.png'); background-size: cover; background-position: center;"> </div>
+    <div class="textbloque2" style="width: 50%; margin: 1em;">
+    <h1 style="font-size: 20px; line-height: 23px; color: #000000; font-weight: bold; font-family: 'Arial';">TÍTULO DOS</h1>
+    <p style="font-size: 13px; line-height: 19px; color: #000000; font-family: 'Arial';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+    </div>
+    </div>
+    </div>
+    <div class="bloque3" style="width: 100%; display: flex; justify-content: center; align-content: center; padding-top: 1em; padding-bottom: 1em;">
+    <div class="contentBloque3" style="width: 100%; display: flex; flex-direction: row; margin: 1em; background-color: #82bd47; box-sizing: border-box;">
+    <div class="tituloBloque3">
+    <h1 style="font-size: 25px; line-height: 29px; color: #fffefe; font-weight: bold; font-family: 'Arial'; text-align: justify; padding-left: 1em; padding-right: 1em;">TEXTO TÍTULO TRES</h1>
+    </div>
+    <div class="textoBloque3" style="margin-top: 1em; margin-bottom: 1em;">
+    <div class="linea3" style="width: 100%; border-left: 2px solid white;">
+    <p style="font-size: 13px; line-height: 19px; color: #fffefe; margin: 0; margin-left: 1em; margin-right: 1em; margin-bottom: 1em; font-family: 'Arial';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+    <button class="sanMiguelButton" style="width: 133px; margin: 1em; height: 35px; background-color: #ffffff; border: none; cursor: pointer;"> <a style="text-decoration: none; font-weight: 800; color: #000000; font-size: 16px; line-height: 23px; font-family: 'Arial'; text-align: center;" href="https://sanmiguelglobal.com/somos-lideres-en-la-industria-alimenticia">BOTÓN</a></button></div>
+    </div>
+    </div>
+    </div>
+    <div class="bloque4" style="width: 100%; display: flex; justify-content: center; align-content: center; margin-bottom: 32px;">
+    <div class="contentBloque4" style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-content: center;">
+    <div class="card" style="width: 32%; background-color: #efeeee; margin: 5px;">
+    <div class="image1"><img style="width: 100%; height: 150px;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/image1_g4pdcx.png" alt="image1" /></div>
+    <div class="textoBloque4" style="margin: 16px;">
+    <h2 style="font-size: 16px; line-height: 15px; color: #000000; font-weight: bold; font-family: 'Arial';">TÍTULO DOS</h2>
+    <p style="font-size: 10px; line-height: 12px; color: #000000; font-family: 'Arial';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+    </div>
+    </div>
+    <div class="card" style="width: 32%; background-color: #efeeee; margin: 5px;">
+    <div class="image2"><img style="width: 100%; height: 150px;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/image2_aiuay5.png" alt="image2" /></div>
+    <div class="textoBloque4" style="margin: 16px;">
+    <h2 style="font-size: 16px; line-height: 15px; color: #000000; font-weight: bold; font-family: 'Arial';">TÍTULO TRES</h2>
+    <p style="font-size: 10px; line-height: 12px; color: #000000; font-family: 'Arial';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+    </div>
+    </div>
+    <div class="card" style="width: 32%; background-color: #efeeee; margin: 5px;">
+    <div class="image3"><img style="width: 100%; height: 150px;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/image3_mbazpz.png" alt="image3" /></div>
+    <div class="textoBloque4" style="margin: 16px;">
+    <h2 style="font-size: 16px; line-height: 15px; color: #000000; font-weight: bold; font-family: 'Arial';">TÍTULO CUATRO</h2>
+    <p style="font-size: 10px; line-height: 12px; color: #000000; font-family: 'Arial';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr /><footer style="width: 600px; margin-left: auto; margin-right: auto;">
+    <div class="contentFoot" style="width: 600px; margin-left: auto; margin-right: auto; display: flex; flex-direction: row; justify-content: center; align-content: center;">
+    <div class="logofooter" style="width: 30%; height: 50px; background-image: url('https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/sanmiguel_y3oe53.png'); background-size: cover; background-position: center;"> </div>
+    <div class="redes" style="width: 60%; height: 50px;">
+    <ul style="padding: 0; margin: 0; list-style: none; display: flex; flex-direction: row; float: right;">
+    <li style="margin-left: 5px; margin-right: 5px; margin-top: 5px;"><a href="https://www.facebook.com/sanmiguelglobal"> <img style="width: 100%; cursor: pointer;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946858/ASSETS/ig_nufdri.png" alt="instagram" /> </a></li>
+    <li style="margin-left: 5px; margin-right: 5px; margin-top: 5px;"><a href="https://www.instagram.com/sanmiguelglobal/"> <img style="width: 100%; cursor: pointer;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946857/ASSETS/fb_tb4y1m.png" alt="facebook" /> </a></li>
+    <li style="margin-left: 5px; margin-right: 5px; margin-top: 5px;"><a href="https://twitter.com/SanMiguelGlobal"> <img style="width: 100%; cursor: pointer;" src="https://res.cloudinary.com/djnhaprmj/image/upload/v1624946859/ASSETS/tw_yolqsh.png" alt="twitter" /> </a></li>
+    </ul>
+    </div>
+    </div>
     </footer>
   </body>
 </html>
