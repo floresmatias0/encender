@@ -5,8 +5,325 @@
     <meta name="author" content="Matias Flores" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Encender</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>newsletter</title>
+    <style type="text/css">
+      body{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      header{
+        width: 100%;
+        background-image: url("/assets/limones.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+      }
+      .logoHeader{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 211px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .logoHeader img{
+        width: 100%;
+      }
+      .container{
+        width: 100%;
+      }
+      /* Bloque uno */
+      .bloque1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        box-sizing: content-box;
+      }
+      .bloque1 h1{
+        font-size: 26px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        color: #82bd47;
+        font-weight: bold;
+        margin: 0;
+        font-family: "Arial";
+        text-align: center;
+      }
+      .bloque1 p{
+        font-size: 16px;
+        line-height: 25px;
+        margin: 1.5em !important;
+        color: #000000;
+        font-family: "Arial";
+        text-align: center;
+        margin: 0;
+      }
+      .bloque1 img{
+          width:51px;
+          height: 74px;
+      }
+
+      /* Bloque dos */
+      .bloque2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .contentBloque2{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        background-color: #efeeee;
+      }
+      .imagebloque2,.textbloque2{
+        width: 50%;
+      }
+      .textbloque2{
+        margin: 1em;
+      }
+      .imagebloque2{
+        background-image: url("/assets/lapicera.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .textbloque2 h1{
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+        font-weight: bold;
+        font-family: "Arial";
+      }
+      .textbloque2 p{
+        font-size: 13px;
+        line-height: 19px;
+        color: #000000;
+        font-family: "Arial";
+      }
+
+      /* Bloque tres */
+      .bloque3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      .contentBloque3{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        margin: 1em;
+        background-color: #82bd47;
+        box-sizing: border-box;
+      }
+
+      .tituloBloque3 h1{
+        font-size: 25px;
+        line-height: 29px;
+        color: #fffefe;
+        font-weight: bold;
+        font-family: "Arial";
+        text-align: justify;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+      .textoBloque3{
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .linea3{
+        width: 100%;
+        border-left: 2px solid white;
+      }
+      .textoBloque3 p{
+        font-size: 13px;
+        line-height: 19px;
+        color: #fffefe;
+        margin: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        font-family: "Arial";
+      }
+      .sanMiguelButton{
+        width: 133px;
+        margin: 1em;
+        height: 35px;
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+      .sanMiguelButton:hover{
+        border: 2px solid lightblue;
+      }
+      .sanMiguelButton a{
+        text-decoration: none;
+        font-weight: 800;
+        color: #000000;
+        font-size: 16px;
+        line-height: 23px;
+        font-family: "Arial";
+        text-align: center;
+      }
+      .logofooter{
+        width: 20%;
+      }
+      .logofooter img{
+        width: 100%;
+      }
+      .redes{
+        width: 80%;
+      }
+      /* Bloque 4*/
+      .bloque4{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 2em;
+      }
+      .contentBloque4{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+      }
+      .card{
+        width: 32%;
+        background-color: #efeeee;
+      }
+      .card p{
+        font-size: 10px;
+        line-height: 12px;
+        color: #000000;
+        font-family: "Arial";
+      }
+      .card h2{
+        font-size: 16px;
+        line-height: 15px;
+        color: #000000;
+        font-weight: bold;
+        font-family: "Arial";
+      }
+      .image1 img, .image2 img, .image3 img{
+        width: 100%;
+        height: 119px;
+      }
+      .textoBloque4{
+        margin: 1em;
+      }
+
+      /* FOOTER */
+      footer{
+        width: 100%;
+        border-top: 2px solid gray;
+        display: flex;
+        flex-direction: row;
+      }
+      .logofooter{
+        width: 30%;
+      }
+      .redes{
+        width: 70%;
+      }
+      .logofooter img{
+          width: 100%;
+          margin-top: 0.5em;
+      }
+      .redes ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        float: right;
+      }
+      .redes ul li{
+        margin-left: 0.2em;
+        margin-right: 0.3em;
+        margin-top: 1em;
+      }
+      .redes ul li img{
+        width: 100%;
+        cursor: pointer;
+      }
+      @media screen and (max-width:600px){
+        body{
+          width: 100%;
+        }
+        .contentBloque2{
+          width: 90%;
+        }
+        .contentBloque4{
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+        }
+        .card{
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 1em;
+        }
+        .contentBloque3{
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          margin: 1em;
+          background-color: #82bd47;
+          box-sizing: border-box;
+        }
+        .linea3{
+          width: 100%;
+          border-top: 2px solid white;
+          border-left: none;
+        }
+        .image1 img, .image2 img, .image3 img{
+          height: 200px;
+        }
+        .textoBloque3 p{
+          margin: 1em;
+        }
+        .tituloBloque3 h1{
+          padding:0;
+          line-height: 0;
+          text-align: center;
+        }
+        .sanMiguelButton{
+          margin: 0;
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+        footer{
+          flex-direction: column;
+        }
+        .logofooter{
+          width: 100%;
+        }
+        .redes{
+          width: 100%;
+        }
+        .redes ul{
+          float: none;
+          justify-content: center;
+          align-content: center;
+        }
+        .redes ul li{
+          width: 60px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -16,44 +333,78 @@
         <div>
       </div>
     </header>
-    <div>
+    <div class="container">
       <div class="bloque1">
-        <h1>TITULO 1</h1>
+        <h1>TÍTULO UNO</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
         <img src="/assets/Forma.png" alt="user">
       </div>
       <div class="bloque2">
-        <div class="imagebloque2">
-          <img src="/assets/lapicera.png" alt="user">
-        </div>
-        <div class="textbloque2">
-          <h1>TITULO 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        <div class="contentBloque2">
+          <div class="imagebloque2">
+          </div>
+          <div class="textbloque2">
+            <h1>TÍTULO DOS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+          </div>
         </div>
       </div>
       <div class="bloque3">
-        <div class="tituloBloque3">
-          <h1>TEXTO TITULO TRES</h1>
-        </div>
-        <div class="textoBloque3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        <div class="contentBloque3">
+          <div class="tituloBloque3">
+            <h1>TEXTO TÍTULO TRES</h1>
+          </div>
+          <div class="textoBloque3">
+            <div class="linea3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              <button class="sanMiguelButton"><a href="https://sanmiguelglobal.com/somos-lideres-en-la-industria-alimenticia">BOTÓN</a></button>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="bloque4">
+        <div class="contentBloque4">
+            <div class="card">
+              <div class="image1">
+                <img src="/assets/image1.png" alt="image1"/>
+              </div>
+              <div class="textoBloque4">
+                <h2>TÍTULO DOS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image2">
+                <img src="/assets/image2.png" alt="image2"/>
+              </div>
+              <div class="textoBloque4">
+                <h2>TÍTULO TRES</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image3">
+                <img src="/assets/image3.png" alt="image3"/>
+              </div>
+              <div class="textoBloque4">
+                <h2>TÍTULO CUATRO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <footer>
-      <div class="containerFoot">
         <div class="logofooter">
           <img src="/assets/sanmiguel.png" alt="logo">
-        <div>
+        </div>
         <div class="redes">
           <ul>
-            <li><img src="/assets/ig.png" alt="instagram"></li>
-            <li><img src="/assets/fb.png" alt="facebook"></li>
-            <li><img src="/assets/tw.png" alt="twitter"></li>
+            <li><a href="https://www.facebook.com/sanmiguelglobal"><img src="/assets/ig.png" alt="instagram"></a></li>
+            <li><a href="https://www.instagram.com/sanmiguelglobal/"><img src="/assets/fb.png" alt="facebook"></a></li>
+            <li><a href="https://twitter.com/SanMiguelGlobal"><img src="/assets/tw.png" alt="twitter"></a></li>
           </ul>
         </div>
-      </div>
     </footer>
   </body>
-  <script type="text/javascript" src="js/index.js"></script>
 </html>
